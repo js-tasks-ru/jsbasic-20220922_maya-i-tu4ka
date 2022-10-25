@@ -1,3 +1,8 @@
 function makeFriendsList(friends) {
-  // ваш код...
-}
+  let ul = document.createElement("ul");
+  ul.innerHTML = friends.map(el => `
+    <li>${el.firstName}&nbsp;${el.lastName}</li>
+  `).join('');
+
+  return ul;
+};
