@@ -7,7 +7,7 @@ function makeDiagonalRed(table) {
     
     for (let j = 0; j < item.length; ++j) {
       color = item[i];
-      color.style.color = "red";
+      color.style.backgroundColor = "red";
     }
   }
 }
